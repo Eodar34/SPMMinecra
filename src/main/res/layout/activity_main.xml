@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/image"
+        />
+
+    <TextView
+        android:id="@+id/obtencion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/nombre"
+        />
+
+    <EditText
+        android:id="@+id/editTextNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/obtencion"
+        />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNom"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/afegir"
+        android:text="añadir"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:onClick="afegirUsuari"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mostrar"
+        android:text="consultar"
+        android:layout_toRightOf="@id/afegir"
+        android:layout_alignParentBottom="true"
+        android:onClick="consultarUsuari"
+        />
+
+
+</RelativeLayout>
+
